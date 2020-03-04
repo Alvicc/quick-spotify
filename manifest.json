@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Quickify: Spotify Web Player Shortcuts",
-  "version": "1.3.8",
+  "version": "1.3.9",
 
   "description": "Provides a quick way of interacting with the Spotify Web Player without losing context of your current webpage. (Fork with Cover art)",
   "icons": {
