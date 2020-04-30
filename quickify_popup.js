@@ -5,6 +5,7 @@ QuickifyPopup.handleStatus = function(request, sender, sendResponse) {
   if (request.type != QuickifyMessages.STATUS) return;
   QuickifyPopup.song.textContent = request.song;
   QuickifyPopup.artist.textContent = request.artist;
+  QuickifyPopup.artist.setAttribute("title", request.artist); // Artist display on hover
   QuickifyPopup.playpauseBtn.classList.toggle('pause', request.isPlaying);
   QuickifyPopup.shuffleBtn.classList.toggle('on', request.isShuffled);
   QuickifyPopup.addBtn.classList.toggle('done', request.isSaved);

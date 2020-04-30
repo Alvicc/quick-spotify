@@ -1,6 +1,6 @@
 body {
   width: 350px;
-  font-family: 'proxima_nova','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'proxima_nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   z-index: 3;
   margin: 0px;
@@ -16,6 +16,7 @@ body {
 
 #info {
   margin: 9px;
+  overflow: hidden;
 }
 
 #song {
@@ -24,17 +25,28 @@ body {
   font-weight: 500;
   z-index: 1;
 }
+
 #artist {
   text-align: center;
   width: 100%;
   font-size: 16px;
+  width: 190px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
+
+#artist:hover {
+  overflow: visible;
+  z-index: 2;
+}
+
 #artCover {
   flex-shrink: 0;
   height: 110px;
   width: 110px;
   background-size: cover;
 }
+
 #volume-bar {
   height: 100%;
   width: 14px;
@@ -43,7 +55,7 @@ body {
   padding: 0px;
 }
 
-#volume, #volume-progress{
+#volume, #volume-progress {
   width: 5px;
   border-radius: 3px;
   margin: auto;
@@ -77,6 +89,7 @@ body {
   justify-content: space-between;
   height: 42px;
 }
+
 #prev, #playpause, #next, #shuffle, #repeat, #add {
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,15 +124,15 @@ body {
   flex-basis: 20%;
 }
 
-
-#prev:hover, #playpause:hover, #next:hover, #shuffle:hover,
-#repeat:hover, #add:hover {
+#prev:hover, #playpause:hover, #next:hover, #shuffle:hover, #repeat:hover, #add:hover {
   opacity: 1;
 }
+
 #prev {
   /* background-image: url('icons/white-skip-to-start-48.png'); */
   left: 94px;
 }
+
 #playpause {
   background-size: 28px;
   background-position-x: 6px;
@@ -128,12 +141,13 @@ body {
   height: 36px;
   top: 2px;
   left: 131px;
-
   transition: all .05s ease-in-out;
 }
+
 #playpause:hover {
   transform: scale(1.05);
 }
+
 #playpause.pause {
   background-position-x: 4px;
 }
@@ -142,9 +156,11 @@ body {
   width: 28px;
   height: 28px;
 }
+
 #add.done {
   background-size: 25px;
 }
+
 #shuffle, #repeat {
   background-size: 20px 20px;
 }
