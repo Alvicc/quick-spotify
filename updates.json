@@ -13,6 +13,10 @@
         { 
           "version" : "1.3.9",
           "update_link": "https://github.com/Alvicc/quick-spotify/releases/download/1.3.9/quickify.xpi"
+        },
+        { 
+          "version" : "1.3.10",
+          "update_link": "https://github.com/Alvicc/quick-spotify/releases/download/1.3.10/quickify.xpi"
         }
     ]
     }
