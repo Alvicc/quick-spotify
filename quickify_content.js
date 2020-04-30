@@ -45,7 +45,9 @@ Quickify.broadcast = function() {
   var trackName = document.querySelector('.c319b99793755cc3bba709fe1b1fda42-scss a');
   var trackArtist = document.querySelector('._44843c8513baccb36b3fa171573a128f-scss a');
 
-  var artCoverUrl = document.querySelector(".cover-art-image").style.backgroundImage;
+  var artCoverUrl = document.querySelector(".cover-art-image").getAttribute("src");
+  
+  
 
   var trackCurrentDiv = document.querySelector(".playback-bar__progress-time");
   var trackLengthDiv = document.querySelectorAll(".playback-bar__progress-time")[1];  

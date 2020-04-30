@@ -8,7 +8,8 @@ QuickifyPopup.handleStatus = function(request, sender, sendResponse) {
   QuickifyPopup.playpauseBtn.classList.toggle('pause', request.isPlaying);
   QuickifyPopup.shuffleBtn.classList.toggle('on', request.isShuffled);
   QuickifyPopup.addBtn.classList.toggle('done', request.isSaved);
-  QuickifyPopup.artCover.style.backgroundImage = request.artCoverUrl;
+  QuickifyPopup.artCover.src = request.artCoverUrl;
+  
   
   var volumeSize = QuickifyPopup.volumeBar.getBoundingClientRect().height;
   QuickifyPopup.volumeProgress.style.transform = "translateY(" + (volumeSize - (request.currentVolume * volumeSize)) + "px)";
