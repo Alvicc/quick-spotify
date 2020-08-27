@@ -42,8 +42,8 @@ Quickify.broadcast = function() {
   var statusMsg = {};
   statusMsg.type = QuickifyMessages.STATUS;
 
-  var trackName = document.querySelector('.c319b99793755cc3bba709fe1b1fda42-scss a');
-  var trackArtist = document.querySelector('._44843c8513baccb36b3fa171573a128f-scss a');
+  var trackName = document.querySelector('[data-testid="nowplaying-track-link"]');
+  var trackArtist = document.querySelector('.b6d18e875efadd20e8d037931d535319-scss a');
 
   var artCoverUrl = document.querySelector(".cover-art-image").getAttribute("src");
   
